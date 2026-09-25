@@ -1,0 +1,16 @@
+Age,Income,Credit_Score,Loan_Amount,Previous_Default,Employment_Years,Loan_Status
+22,25000,580,100000,Yes,1,Rejected
+25,32000,650,150000,No,3,Approved
+28,40000,720,200000,No,5,Approved
+31,45000,690,250000,No,6,Approved
+35,52000,610,300000,Yes,4,Rejected
+38,60000,750,350000,No,10,Approved
+42,70000,680,400000,No,12,Approved
+45,48000,590,280000,Yes,7,Rejected
+24,28000,620,120000,No,2,Approved
+30,35000,570,180000,Yes,4,Rejected
+33,50000,710,220000,No,8,Approved
+27,30000,560,130000,Yes,2,Rejected
+40,65000,740,380000,No,11,Approved
+29,42000,670,210000,No,6,Approved
+36,55000,600,320000,Yes,5,Rejected

@@ -1,0 +1,172 @@
+{
+  "best_model_name": "Gradient Boosting",
+  "best_params": {
+    "learning_rate": 0.1,
+    "max_depth": 3,
+    "n_estimators": 100
+  },
+  "best_cv_score": 0.2103,
+  "before_tuning_f1": 0.1976,
+  "tuned_metrics": {
+    "accuracy": 0.7768,
+    "precision": 0.8462,
+    "recall": 0.1119,
+    "f1_score": 0.1976
+  },
+  "models": [
+    {
+      "name": "Logistic Regression",
+      "train_accuracy": 0.7772,
+      "test_accuracy": 0.7759,
+      "accuracy": 0.7759,
+      "precision": 0.8421,
+      "recall": 0.1085,
+      "f1_score": 0.1922,
+      "fit_status": "Good fit",
+      "cv_f1_mean": 0.2077,
+      "cv_f1_std": 0.0195
+    },
+    {
+      "name": "Decision Tree",
+      "train_accuracy": 0.7848,
+      "test_accuracy": 0.7743,
+      "accuracy": 0.7743,
+      "precision": 0.8529,
+      "recall": 0.0983,
+      "f1_score": 0.1763,
+      "fit_status": "Good fit",
+      "cv_f1_mean": 0.2034,
+      "cv_f1_std": 0.021
+    },
+    {
+      "name": "Random Forest",
+      "train_accuracy": 1.0,
+      "test_accuracy": 0.7776,
+      "accuracy": 0.7776,
+      "precision": 0.9,
+      "recall": 0.1068,
+      "f1_score": 0.1909,
+      "fit_status": "Overfitting",
+      "cv_f1_mean": 0.2085,
+      "cv_f1_std": 0.022
+    },
+    {
+      "name": "AdaBoost",
+      "train_accuracy": 0.7793,
+      "test_accuracy": 0.7776,
+      "accuracy": 0.7776,
+      "precision": 0.9118,
+      "recall": 0.1051,
+      "f1_score": 0.1884,
+      "fit_status": "Good fit",
+      "cv_f1_mean": 0.2026,
+      "cv_f1_std": 0.0206
+    },
+    {
+      "name": "Gradient Boosting",
+      "train_accuracy": 0.7852,
+      "test_accuracy": 0.7768,
+      "accuracy": 0.7768,
+      "precision": 0.8462,
+      "recall": 0.1119,
+      "f1_score": 0.1976,
+      "fit_status": "Good fit",
+      "cv_f1_mean": 0.2103,
+      "cv_f1_std": 0.0247
+    }
+  ],
+  "cv_summary": {
+    "Logistic Regression": {
+      "cv_f1_mean": 0.2077,
+      "cv_f1_std": 0.0195,
+      "folds": [
+        0.2288,
+        0.2259,
+        0.1757,
+        0.2103,
+        0.1978
+      ]
+    },
+    "Decision Tree": {
+      "cv_f1_mean": 0.2034,
+      "cv_f1_std": 0.021,
+      "folds": [
+        0.2222,
+        0.2206,
+        0.178,
+        0.219,
+        0.1774
+      ]
+    },
+    "Random Forest": {
+      "cv_f1_mean": 0.2085,
+      "cv_f1_std": 0.022,
+      "folds": [
+        0.2362,
+        0.2275,
+        0.1842,
+        0.2127,
+        0.1822
+      ]
+    },
+    "AdaBoost": {
+      "cv_f1_mean": 0.2026,
+      "cv_f1_std": 0.0206,
+      "folds": [
+        0.2301,
+        0.2152,
+        0.1752,
+        0.2097,
+        0.1825
+      ]
+    },
+    "Gradient Boosting": {
+      "cv_f1_mean": 0.2103,
+      "cv_f1_std": 0.0247,
+      "folds": [
+        0.234,
+        0.2303,
+        0.1856,
+        0.2263,
+        0.1752
+      ]
+    }
+  },
+  "confusion_matrix": [
+    [
+      1799,
+      12
+    ],
+    [
+      524,
+      66
+    ]
+  ],
+  "classification_report": {
+    "Not Fraud": {
+      "precision": 0.774429616874731,
+      "recall": 0.9933738266151297,
+      "f1-score": 0.8703434929850025,
+      "support": 1811.0
+    },
+    "Fraud": {
+      "precision": 0.8461538461538461,
+      "recall": 0.11186440677966102,
+      "f1-score": 0.19760479041916168,
+      "support": 590.0
+    },
+    "accuracy": 0.7767596834652228,
+    "macro avg": {
+      "precision": 0.8102917315142886,
+      "recall": 0.5526191166973954,
+      "f1-score": 0.533974141702082,
+      "support": 2401.0
+    },
+    "weighted avg": {
+      "precision": 0.7920544795464003,
+      "recall": 0.7767596834652228,
+      "f1-score": 0.7050307755698229,
+      "support": 2401.0
+    }
+  }
+}
