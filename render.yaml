@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: insurance-backend
+    env: python
+    rootDir: "ML Project/backend"
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "uvicorn main:app --host 0.0.0.0 --port $PORT"
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.4
+      - key: CORS_ORIGINS
+        value: "*" # Allows frontend to connect to the backend
+
+  - type: web
+    name: insurance-frontend
+    env: static
+    rootDir: "ML Project/Task 4 Frontend"
+    buildCommand: "npm install && npm run build"
+    staticPublishPath: "./dist"
+    envVars:
+      - key: NODE_VERSION
+        value: 18.18.0
+      - key: VITE_API_URL
+        # IMPORTANT: Once the backend is deployed, copy its URL and paste it here or in the Render dashboard
+        value: "https://insurance-backend.onrender.com"
